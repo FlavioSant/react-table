@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use '../styles/colors.scss';
+@use '../styles/typography.scss';
+
+.table-head {
+  th {
+    border-bottom: 1px solid colors.$gray-200;
+    color: colors.$gray-800;
+    font-size: map.get(typography.$sizes, 'paragraph2');
+    font-weight: map.get(typography.$weights, 'paragraph2');
+    line-height: map.get(typography.$line-heights, 'paragraph2');
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+  }
+
+  .sortable {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      color: colors.$blue-500;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@use 'sass:map';
+@use '../typography.scss';
+@use '../colors.scss';
+
+// Headings
+
+.heading1 {
+  font-size: map.get(typography.$sizes, 'h1');
+  font-weight: map.get(typography.$weights, 'h1');
+  line-height: map.get(typography.$line-heights, 'h1');
+}
+
+.heading2 {
+  font-size: map.get(typography.$sizes, 'h2');
+  font-weight: map.get(typography.$weights, 'h2');
+  line-height: map.get(typography.$line-heights, 'h2');
+}
+
+.heading3 {
+  font-size: map.get(typography.$sizes, 'h3');
+  font-weight: map.get(typography.$weights, 'h3');
+  line-height: map.get(typography.$line-heights, 'h3');
+}
+
+.heading4 {
+  font-size: map.get(typography.$sizes, 'h4');
+  font-weight: map.get(typography.$weights, 'h4');
+  line-height: map.get(typography.$line-heights, 'h4');
+}
+
+.heading5 {
+  font-size: map.get(typography.$sizes, 'h5');
+  font-weight: map.get(typography.$weights, 'h5');
+  line-height: map.get(typography.$line-heights, 'h5');
+}
+
+.heading6 {
+  font-size: map.get(typography.$sizes, 'h6');
+  font-weight: map.get(typography.$weights, 'h6');
+  line-height: map.get(typography.$line-heights, 'h6');
+}
+
+.subheading {
+  font-size: map.get(typography.$sizes, 'subheading');
+  font-weight: map.get(typography.$weights, 'subheading');
+  line-height: map.get(typography.$line-heights, 'subheading');
+}
+
+// Paragraphs
+
+.paragraph1 {
+  font-size: map.get(typography.$sizes, 'paragraph1');
+  font-weight: map.get(typography.$weights, 'paragraph1');
+  line-height: map.get(typography.$line-heights, 'paragraph1');
+}
+
+.paragraph2 {
+  font-size: map.get(typography.$sizes, 'paragraph2');
+  font-weight: map.get(typography.$weights, 'paragraph2');
+  line-height: map.get(typography.$line-heights, 'paragraph2');
+}
+
+.paragraph3 {
+  font-size: map.get(typography.$sizes, 'paragraph3');
+  font-weight: map.get(typography.$weights, 'paragraph3');
+  line-height: map.get(typography.$line-heights, 'paragraph3');
+}
+
+.paragraph4 {
+  font-size: map.get(typography.$sizes, 'paragraph4');
+  font-weight: map.get(typography.$weights, 'paragraph4');
+  line-height: map.get(typography.$line-heights, 'paragraph4');
+}
+
+// Captions
+
+.caption1 {
+  font-size: map.get(typography.$sizes, 'caption1');
+  font-weight: map.get(typography.$weights, 'caption1');
+  line-height: map.get(typography.$line-heights, 'caption1');
+}
+
+.caption2 {
+  font-size: map.get(typography.$sizes, 'caption2');
+  font-weight: map.get(typography.$weights, 'caption2');
+  line-height: map.get(typography.$line-heights, 'caption2');
+}
+
+// Footer
+
+.footer {
+  font-size: map.get(typography.$sizes, 'footer');
+  font-weight: map.get(typography.$weights, 'footer');
+  line-height: map.get(typography.$line-heights, 'footer');
+}
+
+// Alignments
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: start;
+}
+
+.text-right {
+  text-align: end;
+}

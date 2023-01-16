@@ -1,0 +1,48 @@
+@use '../colors.scss';
+
+$all_colors: (
+  white: colors.$white,
+  black: colors.$black,
+
+  gray-50: colors.$gray-50,
+  gray-100: colors.$gray-100,
+  gray-200: colors.$gray-200,
+  gray-300: colors.$gray-300,
+  gray-400: colors.$gray-400,
+  gray-500: colors.$gray-500,
+  gray-600: colors.$gray-600,
+  gray-700: colors.$gray-700,
+  gray-800: colors.$gray-800,
+  gray-900: colors.$gray-900,
+
+  blue-50: colors.$blue-50,
+  blue-100: colors.$blue-100,
+  blue-200: colors.$blue-200,
+  blue-300: colors.$blue-300,
+  blue-400: colors.$blue-400,
+  blue-500: colors.$blue-500,
+  blue-600: colors.$blue-600,
+  blue-700: colors.$blue-700,
+  blue-800: colors.$blue-800,
+  blue-900: colors.$blue-900,
+);
+
+@each $color, $value in $all_colors {
+  .#{'' + $color} {
+    color: $value;
+  }
+
+  .bg-#{'' + $color} {
+    background-color: $value;
+  }
+
+  .text-#{'' + $color} {
+    color: $value;
+  }
+
+  .hover-#{'' + $color} {
+    &:hover {
+      color: $value !important;
+    }
+  }
+}

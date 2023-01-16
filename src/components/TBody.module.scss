@@ -1,0 +1,19 @@
+@use 'sass:map';
+@use '../styles/colors.scss';
+@use '../styles/typography.scss';
+
+.table-body {
+  td {
+    border-bottom: 1px solid colors.$gray-200;
+    color: colors.$gray-700;
+    font-size: map.get(typography.$sizes, 'paragraph3');
+    font-weight: map.get(typography.$weights, 'paragraph3');
+    line-height: map.get(typography.$line-heights, 'paragraph3');
+    padding: 0.75rem 1.5rem;
+    white-space: nowrap;
+  }
+
+  tr:hover td {
+    background-color: colors.$gray-100;
+  }
+}

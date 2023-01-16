@@ -1,0 +1,57 @@
+@use '../styles/colors.scss';
+@use '../styles/breakpoints.scss';
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+
+  @include breakpoints.and-up(md) {
+    flex-direction: row;
+  }
+}
+
+.pagination-per-page-container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+
+  select {
+    border-radius: 0.25rem;
+    border-color: colors.$gray-400;
+    color: colors.$gray-700;
+    padding: 0.25rem;
+
+    &:hover {
+      border-color: colors.$gray-500;
+    }
+  }
+}
+
+.pagination-buttons-container {
+  display: flex;
+  align-items: center;
+
+  button {
+    font-size: 0;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: colors.$gray-700;
+    padding: 0.5rem;
+    transition: background 0.2s;
+
+    &:not(:disabled):hover {
+      background: colors.$gray-200;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
